@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": ".",
+    "moduleResolution": "node16",
+    "module": "Node16",
+    "target": "ES2020",
+    "allowImportingTsExtensions": false,
+    "noEmit": true,
+    "skipLibCheck": true
+  },
+  "include": ["*.ts"],
+  "exclude": ["node_modules", "dist", "src"]
+}
