@@ -1,0 +1,37 @@
+{
+  "name": "ao-esmscripten-transform",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "AssemblyScript transform for emscripten compatibility",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "pnpm run clean && pnpm run build",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "pnpm run build && changeset publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "assemblyscript",
+    "emscripten",
+    "webassembly",
+    "transform"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "assemblyscript": "^0.27.0",
+    "typescript": "^5.3.0"
+  },
+  "peerDependencies": {
+    "assemblyscript": "^0.27.0"
+  }
+}
